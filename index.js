@@ -1,3 +1,5 @@
+console.log('컴퓨터가 숫자를 생성하였습니다. 답을 맞춰보세요!');
+
 // 임의의 숫자 3개 받기
 let createNum = [];
 for (var i = 0; i < 3; i++) {
@@ -14,7 +16,7 @@ var input = prompt('숫자를 입력해주세요.');
 
 let inputNum = [];
 for (var i = 0; i < 3; i++) {
-    inputNum.push(input[i]);
+inputNum.push(input[i]);
 }
 
 // 숫자 비교하기
@@ -33,8 +35,9 @@ for (var i = 0; i < 3; i++) {
     }
 }
 
-console.log(`${ball_cnt}B${strike_cnt}S`)
+console.log(`${try_cnt}번째 시도 : ${input}`);
+console.log(`${ball_cnt}B${strike_cnt}S`);
 
-let a = [1,2,3];
-let b = [1,2,3];
-console.log(JSON.stringify(a) === JSON.stringify(b));
+// 완료를 했을 때
+console.log(`${try_cnt}번만의 맞히셨습니다.`);
+console.log('게임을 종료합니다.');
